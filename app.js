@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var port = 80;
+var port = 3000;
 var path = require("path");
 // ***this section allow middleware which parse the data from server and convert into json format which is easy for us to save in data base *******
 var bodyParser = require('body-parser');
