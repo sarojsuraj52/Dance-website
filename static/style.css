@@ -99,7 +99,8 @@ h4{
 
 
 #introsection{
-    height:700px;
+    height:100%;
+    width: 100%;
     color: white;
     display: flex;
     flex-direction: column;
@@ -110,79 +111,71 @@ h4{
     font-size: 50px;
 
 }
-.title{
-    margin-top: 30px;
+#introsection .title{
+    margin-top: 100px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 85px;
 }
-.video{
+#introsection .description{
+    font-size: 35px;
+}
+#introsection .video{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 100%;
-    margin-left: 60px;
+    
     
 }
 .videoiframe{
     margin: 40px;
 }
-    
- #introsection .description{
-    font-size: 35px;
-}
+
+
 
 #ourphotosection{
-    height: 400px;
+    height: 100%;
+    width: 100%;
     background-image:linear-gradient(-150deg,rgba(255, 102, 0, 0.4),rgba(230, 0, 255, 0.9),rgba(0, 206, 154, 0.9) ,rgba(0, 106, 255, 0.8));
     margin-top: 25px;
 }
-/* #ourphotosection h2{
-    padding-top: 12px;   
-} */
+
+#ourphotosection .photo-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
 
 .card{
-    
-    border-radius: 10px;
-    width: 20%;
-    height: 64%;
-    margin: -40px 30px;
-    display: inline-block;
-    
-    
-    
-}
-.card:hover{
-    transform: translateZ(0);
+  margin: 0px 15px;    
+
 }
 
+
 .card img{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 300px;
     border: 1px solid #d2b4b4a6;
     border-radius: 16px;
-    margin: auto;
-    margin-top: 5px;
 }
 
 
 #sponsorsecton{
-    height:450px;
+    height:100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-image:linear-gradient(-326deg,rgba(230, 0, 255, 0.9) ,rgba(0, 106, 255, 0.8),rgba(0, 206, 154, 0.9),rgba(230, 0, 255, 0.8));
 }
-.sponsor{
-                margin: -50px auto 200px;
-        
-    }
 
 #sponsorlogo{
     display: flex;
-    margin-top: -140px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 40px;
    
 }
 
@@ -192,6 +185,7 @@ h4{
     border: 1px solid rgb(191 157 157 / 73%);
     border-radius: 5px;
     width: 195px;
+    height: 195px;
     margin: 10px;
     display: flex;
     align-items: center;
@@ -240,7 +234,7 @@ h4{
     
 }
 .myform{
-    width: 550px;
+    width: 80%;
     display: flex;
     flex-direction: column;
 }
@@ -275,6 +269,37 @@ h4{
     
 }
 
+@media(max-width:650px){
+    #navbar li a{
+        font-size: 20px;
+        padding: 5px 20px;
+
+    }
+    .ires{
+        width: 320px;
+        height: 280px;
+    }
+    #introsection .title p{
+        font-size: 35px;
+       
+    }
+}
 
 
 
+@media(max-width:573px){
+  
+    #navbar li a{
+        font-size: 15px;
+        padding: 5px 15px;
+
+    }
+}
+@media(max-width:462px){
+  
+    #navbar li a{
+        font-size: 12px;
+        padding: 5px 10px;
+
+    }
+}
